@@ -1,0 +1,156 @@
+/* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* RGB Lighting Effect */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, red, blue, green, yellow, purple, cyan, magenta);
+            background-size: 400% 400%;
+            z-index: -1;
+            opacity: 0.2;
+            animation: rgbEffect 10s ease infinite;
+        }
+
+        @keyframes rgbEffect {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            background: linear-gradient(to right, #e0f7fa, #fff3e0);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .card-wrapper {
+            margin-top: 30px;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card h1 {
+            font-size: 2.8rem;
+            color: #007bff;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+        }
+
+        .card p {
+            font-size: 1.3rem;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .card p strong {
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+
+        .heart-icon {
+            color: red;
+            font-size: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        .graduation-cap {
+            color: #007bff;
+            font-size: 2.5rem;
+        }
+
+        .academic-materials {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #6c757d;
+        }
+
+        .academic-materials i {
+            margin: 0 10px;
+        }
+
+        .music-wrapper {
+            margin-top: 20px;
+        }
+
+        /* Parallax Hover Effect for Gallery */
+        .carousel-item img {
+            border-radius: 20px;
+            max-height: 500px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Butterfly Icon Animation */
+        .butterfly {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            font-size: 4rem;
+            color: #ff69b4;
+            animation: flutter 6s ease-in-out infinite;
+        }
+
+        .butterfly::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 182, 193, 0.6);
+            border-radius: 50%;
+            animation: butterflyTrail 6s infinite;
+        }
+
+        @keyframes butterflyTrail {
+            0% { opacity: 0; }
+            50% { opacity: 1; transform: scale(1.5); }
+            100% { opacity: 0; transform: scale(0); }
+        }
+
+        @keyframes flutter {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(15deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Glowing Carousel Border */
+        .carousel {
+            box-shadow: 0 0 15px rgba(0, 255, 150, 0.5), 0 0 30px rgba(255, 0, 150, 0.5);
+            border-radius: 20px;
+        }
+
+        /* Loading Screen */
+        #loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: #007bff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
