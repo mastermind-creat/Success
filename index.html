@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selline's Success | With Love</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <i class="fas fa-graduation-cap fa-spin"></i>
+    </div>
+
+    <!-- Butterfly Icon -->
+    <div class="butterfly">
+        <i class="fas fa-butterfly"></i>
+    </div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <h1>To My Dearest Selline <i class="fas fa-graduation-cap graduation-cap"></i></h1>
+            <p>
+                As you approach your KCSE exams, I want you to know that you are the most brilliant and dedicated person I know. 
+                You've already made me so proud, and this is just the beginning of your journey towards greatness.
+                <br><br>
+                Believe in yourself just as I believe in you! I’ll be right here cheering for you every step of the way. 
+                Good luck, my lovely friend, and remember I’m always here for you.
+                <br><br>
+                <strong>With love, Ley</strong> <i class="fas fa-heart heart-icon"></i>
+            </p>
+            <div class="academic-materials">
+                <i class="fas fa-book"></i>
+                <i class="fas fa-pencil-alt"></i>
+                <i class="fas fa-scroll"></i>
+            </div>
+            <div class="music-wrapper">
+                <audio controls autoplay>
+                    <source src="love.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Carousel Section -->
+    <div id="photoCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="sel.jpg" class="d-block w-100" alt="Selline Picture 1">
+            </div>
+            <div class="carousel-item">
+                <img src="sel1.jpg" class="d-block w-100" alt="Selline Picture 2">
+            </div>
+            <div class="carousel-item">
+                <img src="sel2.jpg" class="d-block w-100" alt="Selline Picture 3">
+            </div>
+            <div class="carousel-item">
+                <img src="sel3.jpg" class="d-block w-100" alt="Selline Picture 4">
+            </div>
+            <div class="carousel-item">
+                <img src="sel4.jpg" class="d-block w-100" alt="Selline Picture 5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Quote Carousel -->
+    <div id="quoteCarousel" class="carousel slide quote-carousel mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card p-3">
+                    <h3>“Believe you can and you're halfway there.”</h3>
+                    <p>- Theodore Roosevelt</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card p-3">
+                    <h3>“Success is the sum of small efforts, repeated day in and day out.”</h3>
+                    <p>- Robert Collier</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card p-3">
+                    <h3>“The future belongs to those who believe in the beauty of their dreams.”</h3>
+                    <p>- Eleanor Roosevelt</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Loader Script to Hide Loading Screen -->
+    <script>
+        window.onload = function() {
+            document.getElementById('loader').style.display = 'none';
+        };
+    </script>
+</body>
+</html>
